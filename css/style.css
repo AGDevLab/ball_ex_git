@@ -15,15 +15,24 @@ header {
   width: 100px;
   height: 100px;
 
+  place-items: center;
   border-radius: 50%;
   margin-inline-start: 50vw;
+  margin-block-start: 2vh;
 
   justify-content: center;
   align-items: center;
-  background-color: blue;
   cursor: pointer;
-  place-items: center;
-  color: whitesmoke;
   font-size: 22px;
   font-weight: bold;
+}
+
+.ball1 {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+.ball2 {
+  background-color: yellow;
+  color: red;
 }
