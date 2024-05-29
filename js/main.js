@@ -9,9 +9,8 @@ function onBallClick(elBtnBall, maxDiameter) {
   var minDiamater = 100
   var randSizeBall = getRandomInt(20, 61)
   var randBallColor = getRandomColor()
-  // console.log(elBtnBall.getAttribute('data-id'))
+
   switchSelector = elBtnBall.getAttribute('data-id')
-  // console.log(switchSelector)
 
   switch (switchSelector) {
     case 'ball1':
