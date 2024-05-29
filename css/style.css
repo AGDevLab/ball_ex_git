@@ -10,70 +10,50 @@ header {
   color: white;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  justify-content: center;
-  /* flex-wrap: wrap; */
-  align-content: center;
-  grid grid-template-areas: 
-  "ball1 ball2 ball3"
-  "ball4 ball5 ball6";
-}
-
 .ball {
-  /* display: flex; */
-  /* flex-wrap: wrap;
-  align-content: center; */
+  display: flex;
   width: 100px;
   height: 100px;
 
-  /* place-items: center; */
+  place-items: center;
   border-radius: 50%;
   border: 2px solid white;
-  /* margin-inline-start: 50vw;
-  margin-block-start: 2vh; */
+  margin-inline-start: 50vw;
+  margin-block-start: 2vh;
 
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   font-size: 22px;
   font-weight: bold;
 }
 
 .ball1 {
-  grid-area: ball1;
   background-color: blue;
   color: whitesmoke;
 }
 
 .ball2 {
-  grid-area: ball1;
   background-color: yellow;
   color: red;
 }
 
 .ball3 {
-  grid-area: ball1;
   background-color: pink;
   color: green;
 }
 
 .ball4 {
-  grid-area: ball1;
   background-color: red;
   color: purple;
 }
 
 .ball5 {
-  grid-area: ball1;
   background-color: orange;
   color: black;
 }
 
 .ball6 {
-  grid-area: ball1;
   background-color: grey;
   color: white;
 }
