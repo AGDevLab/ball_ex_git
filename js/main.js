@@ -6,7 +6,7 @@ var elBall2 = document.querySelector('.ball2')
 
 function onBallClick(elBtnBall, maxDiameter) {
   var maxDiameter = 0
-  var minDiamater = 100
+  // var minDiamater = 100
   var randSizeBall = getRandomInt(20, 61)
   var randBallColor = getRandomColor()
 
