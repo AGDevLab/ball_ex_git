@@ -11,10 +11,19 @@ header {
 }
 
 .ball {
+  display: flex;
   width: 100px;
   height: 100px;
+
   border-radius: 50%;
   margin-inline-start: 50vw;
+
+  justify-content: center;
+  align-items: center;
   background-color: blue;
   cursor: pointer;
+  place-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
 }
