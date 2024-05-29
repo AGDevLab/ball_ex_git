@@ -1,17 +1,20 @@
 'use strict'
 var ballSize = 100
 
-function onBallClick(elBtnBall) {
-  var elBall = elBtnBall
-  // var elBall = elBtnBall.querySelector('.ball1')
-  // var elBall = document.querySelector('.ball')
+function onBallClick(elBtnBall, maxDiameter) {
+  var maxDiameter = 0
+  console.log(elBtnBall.getAttribute('data-id'))
+
+  elBtnBall.getAttribute('data-id') === 'ball1'
+    ? (maxDiameter = 300)
+    : (maxDiameter = 400)
   var randSizeBall = getRandomInt(20, 61)
   var randBallColor = getRandomColor()
 
-  ballSize < 400 ? (ballSize += randSizeBall) : (ballSize = 100)
-  elBall.style.width = ballSize + 'px'
-  elBall.style.height = ballSize + 'px'
-  elBall.style.transition = '1s'
-  elBall.style.backgroundColor = randBallColor
-  elBall.innerText = ballSize
+  ballSize < maxDiameter ? (ballSize += randSizeBall) : (ballSize = 100)
+  elBtnBall.style.width = ballSize + 'px'
+  elBtnBall.style.height = ballSize + 'px'
+  elBtnBall.style.transition = '1s'
+  elBtnBall.style.backgroundColor = randBallColor
+  elBtnBall.innerText = ballSize
 }
