@@ -17,6 +17,7 @@ header {
 
   place-items: center;
   border-radius: 50%;
+  border: 2px solid white;
   margin-inline-start: 50vw;
   margin-block-start: 2vh;
 
@@ -35,4 +36,24 @@ header {
 .ball2 {
   background-color: yellow;
   color: red;
+}
+
+.ball3 {
+  background-color: pink;
+  color: green;
+}
+
+.ball4 {
+  background-color: red;
+  color: purple;
+}
+
+.ball5 {
+  background-color: orange;
+  color: black;
+}
+
+.ball6 {
+  background-color: grey;
+  color: white;
 }
